@@ -1,0 +1,283 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    background-color: white;
+    border-bottom: 3px solid #000;
+    width: 100%;
+    z-index: 1000;
+    /* Đảm bảo thanh menu luôn ở trên cùng */
+    position: fixed;
+    /* cố định menu */
+    top: 0;
+    left: 0;
+}
+
+/* PHẦN MENU */
+.main-menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px 200px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+
+/* Logo bên trái */
+.logo {
+    font-size: 22px;
+    font-weight: 900    ;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Menu nằm ngang */
+.menu {
+    list-style: none;
+    display: flex;
+    /* để các mục nằm ngang */
+    gap: 30px;
+    /* khoảng cách giữa các mục */
+    margin: 0;
+    padding: 0;
+}
+
+/* Gạch phân cách giữa các mục */
+.menu .menu1 {
+    border-right: 2px solid black;
+    padding-right: 20px;
+}
+
+.menu li:last-child {
+    border-right: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.menu1 a:hover {
+    color: aqua;
+}
+
+/* Icon bên phải */
+.icon {
+    display: flex;
+    font-size: 20px;
+    gap: 5px;
+}
+
+.icon i {
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+}
+
+.header{
+    background-color: #222222;
+    height: 200px;
+    margin-top: 59px;
+}
+
+
+.header-chu{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.header-chu2{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* PHẦN FOOTER */
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer img {
+    width: 100%;
+    /* Ảnh phủ hết chiều ngang khung */
+    height: 400px;
+    /* Giới hạn chiều dài ảnh */
+    object-fit: cover;
+    /* Cắt ảnh để vừa khung, không bị méo */
+    object-position: 50% 55%;
+    /* Giữ phần giữa của ảnh */
+    display: block;
+    filter: brightness(60%);
+}
+
+.footer-end {
+    color: white;
+    width: 100%;
+    padding: 25px 0;
+    background-color: #000;
+    display: flex;
+    /* Câu lệnh display và justify-conten là câu lệnh nằm giữa */
+    justify-content: center;
+
+}
+
+.footer-begin {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.box {
+    width: 260px;
+    height: 150px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fa-envelope {
+    font-size: 100px;
+    color: #000000;
+    margin: 0 auto;
+}
+
+.fa-phone {
+    font-size: 95px;
+    color: #000000;
+    margin: 0 auto 5px;
+}
+
+.fa-location-dot {
+    font-size: 95px;
+    color: #000000;
+    margin: 0 auto 5px;
+}
+
+
+.footer-content {
+    position: absolute;
+    max-width: 1200px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    line-height: 30px;
+    
+}
+
+.footer-title {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 50px;
+    margin-right: 718px;
+}
+
+.footer-title1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.footer-title2 {
+    font-size: 15px;
+    color: white;
+}
+
+.footer-icon {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link{
+    position: absolute;
+    filter: brightness(1);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 350px;
+    margin-right: 630px;
+}
+
+.footer-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.add {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* --------------------- KO DUOC SUA PHAN TREN--------------------------- */
+/* Ô TÌM KIẾM */
+.search-box {
+    width: 80%;
+    max-width: 700px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 14px 20px;
+    border: 1.5px solid #ccc;
+    border-radius: 30px 0 0 30px;   /* Bo tròn bên trái */
+    font-size: 16px;
+    outline: none;
+}
+
+.search-btn {
+    width: 50px;
+    height: 50px;
+    background: #000;
+    border: none;
+    border-radius: 0 30px 30px 0;  /* Bo tròn bên phải */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn i {
+    color: white;
+    font-size: 20px;
+}
