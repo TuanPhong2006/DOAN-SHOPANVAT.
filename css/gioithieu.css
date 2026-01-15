@@ -310,6 +310,7 @@ body {
     height: 250px;
     align-content: center;
     text-align: center;
+    border-radius: 10%;
 }
 
 .fa-clipboard-list{
@@ -344,6 +345,7 @@ body {
     width: 250px;
     height: 200px;
     align-content: center;
+    border-radius: 10%;
 }
 
 .GT-DG img{

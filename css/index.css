@@ -252,6 +252,7 @@ body {
 /* --------------------- KO DUOC SUA PHAN TREN--------------------------- */
 
 .ads-container {
+    margin-top: 100px;
     width: 100%;
     overflow: hidden;
 }
@@ -365,6 +366,7 @@ body {
 }
 
 .brg-introduce {
+    margin-top: 20px;
     background-color: #F1F5F8;
     padding: 20px 0;
 }
@@ -385,10 +387,10 @@ body {
 }
 
 .introduce-box {
-    width: 260px;
+    width: 150px;
     height: 150px;
     border: 2px solid #000000;
-    border-radius: 15px;
+    border-radius: 50%;
     text-align: center;
     padding: 20px;
     display: flex;
@@ -430,44 +432,51 @@ body {
 
 .banner {
     position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .banner img {
     width: 100%;
-    height: 400px;
+    height: 450px;
     object-fit: cover;
-    object-position: 50% 55%;
+    object-position: center center;
     display: block;
     filter: brightness(0.7);
 }
 
 .banner .text {
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     max-width: 700px;
+    width: 90%;
     text-align: center;
     color: #fff;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 .banner-title {
     font-size: 36px;
-    margin-bottom: 12px;
+    margin: 0;
+    font-weight: 700;
 }
 
 .banner-title2 {
-    width: 300px;
+    max-width: 550px;
+    width: 100%;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.7;
+    margin: 0 auto;
 }
 
 .banner-button {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 10px;
     width: 140px;
     height: 42px;
     background-color: #2CB9D9;
@@ -486,39 +495,63 @@ body {
 .banner-button:hover {
     background-color: #1aa7c7;
     box-shadow: 0 8px 18px rgba(44, 185, 217, 0.35);
-    transform: translateX(-50%) translateY(-2px);
+    transform: translateY(-2px);
 }
 
 .banner-button:active {
-    transform: translateX(-50%) scale(0.96);
+    transform: scale(0.96);
 }
 
 
-.best-seller {
+/* ========== BESTSELLER SECTION ========== */
+.bestsell {
     max-width: 1200px;
-    height: auto;
-    padding: 20px 200px;
-    margin: 0 auto;
+    margin: 40px auto;
+    padding: 20px 40px;
     text-align: center;
 }
 
-.best1,
-.best2,
-.best11,
-.best21 {
+.bestsell .title2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.bestsell-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-items: center;
+}
+
+/* Product Card */
+.product-card {
     position: relative;
+    background-color: #A8FDFF;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    max-width: 280px;
+    box-sizing: border-box;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Icon giỏ hàng */
-.cart-icon {
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Cart Icon */
+.product-card .cart-icon {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 12px;
+    right: 12px;
     z-index: 5;
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
     background-color: #2CB9D9;
     border-radius: 50%;
     display: flex;
@@ -527,108 +560,98 @@ body {
     opacity: 0;
     transform: scale(0.5);
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.cart-icon i {
+.product-card .cart-icon i {
     color: #fff;
     font-size: 16px;
 }
 
-.best1:hover,
-.best2:hover,
-.best11:hover,
-.best21:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
-}
-
-.best1:hover .cart-icon,
-.best2:hover .cart-icon,
-.best11:hover .cart-icon,
-.best21:hover .cart-icon {
+.product-card:hover .cart-icon {
     opacity: 1;
     transform: scale(1);
 }
 
-.bestsell-box {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-bottom: 20px;
-
+/* Product Image */
+.product-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 12px;
 }
 
-.best1,
-.best2,
-.best11,
-.best21 {
-    border: 1px solid #000000;
-    background-color: #A8FDFF;
-    padding: 15px;
-    flex: 1 1 220px;
-    min-width: 160px;
-    max-width: 260px;
-    box-sizing: border-box;
-    height: auto;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.best1 img,
-.best2 img,
-.best11 img,
-.best21 img {
-    filter: brightness(1);
-    border-radius: 10px;
-}
-
-.best-title1 {
-    color: #837e7e;
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 20px;
-}
-
-.best-title2 {
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 20px;
-}
-
-.best-title3 {
-    margin-top: 40px;
-    margin-left: 20px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.Soluong {
-    width: 40px;
-    height: 27px;
-    background-color: white;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    align-self: flex-end;
-}
-
-.So {
-    font-size: 25px;
-}
-
-.button-BSL {
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
-    margin: 30px auto;
-    width: 120px;
-    height: 40px;
+}
+
+/* Product Info */
+.product-info {
+    text-align: left;
+    padding: 0 5px;
+}
+
+.product-category {
+    color: #837e7e;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px 0 12px;
+    color: #000;
+}
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.product-price .currency {
+    font-size: 11px;
+    color: #8c8a8f;
+    margin-right: 2px;
+}
+
+.product-qty {
+    width: 40px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* View All Button */
+.button-BSL {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 12px 30px;
     background-color: #2CB9D9;
     border: none;
     border-radius: 8px;
     color: #000;
     font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
-
     transition:
         background-color 0.3s ease,
         transform 0.15s ease,
@@ -637,8 +660,8 @@ body {
 
 .button-BSL:hover {
     background-color: #1aa7c7;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 18px rgba(44, 185, 217, 0.35);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(44, 185, 217, 0.4);
 }
 
 .button-BSL:active {
@@ -812,37 +835,22 @@ body {
         background-color: white;
     }
 
-    .best1,
-    .best2,
-    .best11,
-    .best21 {
-        flex: 1 1 175px;
-        min-width: 140px;
-        max-width: 200px;
-        height: auto;
+    /* Bestseller Tablet */
+    .bestsell {
+        padding: 20px;
     }
 
-    .best1 img,
-    .best2 img,
-    .best11 img,
-    .best21 img {
-        width: 100%;
-        height: auto;
-        margin: 0 0 8px;
+    .bestsell .title2 {
+        font-size: 30px;
     }
 
-    .best-title3 {
-        margin-top: 10px;
+    .bestsell-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
-    .Soluong {
-        width: 48px;
-        height: 34px;
-        margin: 0;
-    }
-
-    .So {
-        font-size: 21px;
+    .product-card {
+        max-width: 260px;
     }
 
     .news-box1 {
@@ -1036,41 +1044,54 @@ body {
         width: 767px;
     }
 
-    .best11 {
-        display: none;
+    /* Bestseller Mobile */
+    .bestsell {
+        padding: 15px;
     }
 
-    .best21 {
-        display: none;
-    }
-
-    .bestsell-box {
-        justify-content: center;
-        margin: 0 20px;
-    }
-
-    .best1 {
+    .bestsell .title2 {
+        font-size: 26px;
         margin-bottom: 20px;
     }
 
-    .best1 img {
-        margin: 0 0 8px;
+    .bestsell-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 
-    .best2 {
-        margin-bottom: 20px;
+    .product-card {
+        max-width: 100%;
+        padding: 12px;
     }
 
-    .best2 img {
-        margin: 0 0 8px;
+    .product-img {
+        border-radius: 10px;
+        margin-bottom: 10px;
     }
 
-    .best-title3 {
-        margin-top: 17px;
+    .product-category {
+        font-size: 11px;
     }
 
-    .Soluong {
-        margin-left: 0;
+    .product-name {
+        font-size: 14px;
+        margin: 4px 0 8px;
+    }
+
+    .product-price {
+        font-size: 14px;
+    }
+
+    .product-qty {
+        width: 35px;
+        height: 26px;
+        font-size: 15px;
+    }
+
+    .button-BSL {
+        margin-top: 25px;
+        padding: 10px 25px;
+        font-size: 14px;
     }
 
     .news {
