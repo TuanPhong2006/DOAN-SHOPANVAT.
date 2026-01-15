@@ -141,32 +141,37 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-document.querySelectorAll(".footer-begin .box").forEach(box => {
-    const icon = box.querySelector("i");
-    const h3 = box.querySelector("h3");
-    const h5 = box.querySelector("h5");
+    document.querySelectorAll(".footer-begin .box").forEach(box => {
+        const icon = box.querySelector("i");
+        const h3 = box.querySelector("h3");
+        const h5 = box.querySelector("h5");
 
-    box.addEventListener("mouseenter", () => {
-        box.style.backgroundColor = "#2CB9D9";
-        box.style.borderColor = "#2CB9D9";
-        box.style.boxShadow = "0 12px 25px rgba(0,0,0,0.2)";
+        box.addEventListener("mouseenter", () => {
+            box.style.backgroundColor = "#2CB9D9";
+            box.style.borderColor = "#2CB9D9";
+            box.style.boxShadow = "0 12px 25px rgba(0,0,0,0.2)";
 
-        icon.style.color = "#fff";
-        h3.style.color = "#fff";
-        h5.style.color = "#fff";
+            icon.style.color = "#fff";
+            h3.style.color = "#fff";
+            h5.style.color = "#fff";
+        });
+
+        box.addEventListener("mouseleave", () => {
+            box.style.backgroundColor = "";
+            box.style.borderColor = "";
+            box.style.transform = "";
+            box.style.boxShadow = "";
+
+            icon.style.color = "";
+            h3.style.color = "";
+            h5.style.color = "grey";
+        });
     });
+    const bar = document.querySelector(".fa-bars");
+    const menu = document.querySelector(".menu");
 
-    box.addEventListener("mouseleave", () => {
-        box.style.backgroundColor = "";
-        box.style.borderColor = "";
-        box.style.transform = "";
-        box.style.boxShadow = "";
-
-        icon.style.color = "";
-        h3.style.color = "";
-        h5.style.color = "grey";
+    bar.addEventListener("click", () => {
+        menu.classList.toggle("active");
     });
-});
-
 });
 
