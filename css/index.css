@@ -467,8 +467,13 @@ body {
 .bestsell-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+<<<<<<< HEAD
     gap: 15px;
     justify-items: stretch;
+=======
+    gap: 25px;
+    justify-items: center;
+>>>>>>> 8048bb6fe6dfb90acd1944b88e781af76f5820ad
 }
 
 /* Product Card */
@@ -479,6 +484,10 @@ body {
     border-radius: 15px;
     padding: 15px;
     width: 100%;
+<<<<<<< HEAD
+=======
+    max-width: 280px;
+>>>>>>> 8048bb6fe6dfb90acd1944b88e781af76f5820ad
     box-sizing: border-box;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -802,6 +811,10 @@ body {
         border-radius: 20px;
     }
 
+<<<<<<< HEAD
+=======
+    /* Bestseller Tablet */
+>>>>>>> 8048bb6fe6dfb90acd1944b88e781af76f5820ad
     .bestsell {
         padding: 20px;
     }
@@ -816,7 +829,11 @@ body {
     }
 
     .product-card {
+<<<<<<< HEAD
         max-width: none;
+=======
+        max-width: 260px;
+>>>>>>> 8048bb6fe6dfb90acd1944b88e781af76f5820ad
     }
 
     .news-box1 {
@@ -1025,6 +1042,10 @@ body {
         border-radius: 20px;
     }
 
+<<<<<<< HEAD
+=======
+    /* Bestseller Mobile */
+>>>>>>> 8048bb6fe6dfb90acd1944b88e781af76f5820ad
     .bestsell {
         padding: 15px;
     }
