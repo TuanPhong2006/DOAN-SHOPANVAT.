@@ -263,73 +263,140 @@ body {
 
 .GT-Container {
     width: 100%;
-    height: 300px;
+    min-height: 300px;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: clamp(15px, 3%, 25px);
     flex-wrap: wrap;
+    padding: clamp(20px, 5%, 40px) clamp(20px, 5%, 40px);
 }
 
 .GT-tieude {
-    font-size: 30px;
-    font-weight: 600;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 60px 0 40px;
+}
+
+/* ===== 3 BUOC DON GIAN ===== */
+.GT-Container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 20px 60px;
 }
 
 .GT-box {
-    border: 1px solid black;
-    width: 298px;
-    height: 250px;
-    align-content: center;
-    text-align: center;
-    border-radius: 10%;
+    width: 280px;
+    height: 260px;
+    border-radius: 16px;
+    border: 2px solid #000;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.fa-clipboard-list {
-    font-size: 125px;
+.GT-box i {
+    font-size: 110px;
+    margin-bottom: 15px;
 }
 
-.fa-truck {
-    font-size: 125px;
-}
-
-.fa-utensils {
-    font-size: 125px;
+.GT-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .tieude {
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 600;
-    margin-top: 20px;
 }
 
-.GT-DG {
-    height: 220px;
+/* ===== DANH GIA KHACH HANG ===== */
+
+
+
+/* ===== CAROUSEL SLIDESHOW ===== */
+.carousel-wrapper {
+    position: relative;
     width: 100%;
     display: flex;
-    text-align: center;
-    gap: 30px;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: clamp(10px, 3%, 20px);
+    padding: clamp(20px, 5%, 40px) clamp(10px, 3%, 20px);
+    background-color: #f5f5f5;
 }
 
-.DG-Container {
-    border: 2px solid black;
-    width: 250px;
-    height: 200px;
-    align-content: center;
-    border-radius: 10%;
+.carousel {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: clamp(20px, 4%, 30px);
+    padding: clamp(20px, 5%, 40px) 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
-.GT-DG img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50px;
+.carousel::-webkit-scrollbar {
+    height: 6px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background: #B20003;
+    border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+    background: #8a0002;
+}
+
+.carousel .DG-Container {
+    flex: 0 0 clamp(200px, 85%, 250px);
+    scroll-snap-align: start;
+}
+
+.carousel-btn {
+    position: relative;
+    background-color: #B20003;
+    border: none;
+    width: clamp(40px, 8vw, 50px);
+    height: clamp(40px, 8vw, 50px);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: clamp(16px, 3vw, 20px);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(178, 0, 3, 0.3);
+}
+
+.carousel-btn:hover {
+    background-color: #8a0002;
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(178, 0, 3, 0.4);
+}
+
+.carousel-btn:active {
+    transform: scale(0.95);
+}
+
+.prev-btn {
+    order: -1;
 }
 
 /* Responsive */
@@ -455,6 +522,46 @@ body {
 
     .GioiThieu img {
         width: 100%;
+    }
+
+    /* ===== TABLET BOXES ===== */
+    .GT-Container {
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .GT-box {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .GT-box i {
+        font-size: clamp(70px, 12vw, 100px);
+    }
+
+    .GT-tieude {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .carousel-wrapper {
+        gap: 15px;
+        padding: 30px 15px;
+    }
+
+    .carousel {
+        gap: 20px;
+        padding: 30px 0;
+    }
+
+    .carousel .DG-Container {
+        flex: 0 0 clamp(180px, 75%, 240px);
+    }
+
+    .carousel-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
     }
 }
 
