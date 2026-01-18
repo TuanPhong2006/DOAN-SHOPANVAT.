@@ -61,6 +61,10 @@ body {
     display: none;
 }
 
+.menu .menu21 {
+    display: none;
+}
+
 .menu .menu3 {
     display: flex;
 }
@@ -430,6 +434,10 @@ body {
         text-align: left;
     }
 
+    .menu .menu21 {
+        display: none;
+    }
+
     .menu .menu3 {
         display: flex;
         padding: 14px 20px;
@@ -551,6 +559,13 @@ body {
     }
 
     .menu .menu2 {
+        display: flex;
+        padding: 14px 20px;
+        border-right: none;
+        text-align: left;
+    }
+
+    .menu .menu21 {
         display: flex;
         padding: 14px 20px;
         border-right: none;

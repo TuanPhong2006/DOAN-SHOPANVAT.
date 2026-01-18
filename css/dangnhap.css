@@ -61,6 +61,10 @@ body {
     display: none;
 }
 
+.menu .menu21 {
+    display: none;
+}
+
 .menu .menu3 {
     display: flex;
 }
@@ -222,8 +226,9 @@ body {
 /* END */
 
 /* --------------------- KO DUOC SUA PHAN TREN--------------------------- */
+
 .login-container {
-    width: 500px;
+    max-width: 500px;
     margin: 40px auto;
     padding: 40px;
     border: 2px solid #000;
@@ -328,6 +333,10 @@ body {
         padding: 14px 20px;
         border-right: none;
         text-align: left;
+    }
+
+    .menu .menu21 {
+        display: none;
     }
 
     .menu .menu3 {
@@ -469,6 +478,13 @@ body {
         text-align: left;
     }
 
+    .menu .menu21 {
+        display: flex;
+        padding: 14px 20px;
+        border-right: none;
+        text-align: left;
+    }
+
     .menu .menu3 {
         display: flex;
         padding: 14px 20px;
@@ -493,6 +509,16 @@ body {
 
     .header {
         margin-top: 64px;
+    }
+
+    /* Mobile  */
+
+    .login-title{
+        font-size: 20px;
+    }
+
+    .loginn {
+        padding: 0 15px;
     }
 
     /* ===== MOBILE FOOTER ===== */

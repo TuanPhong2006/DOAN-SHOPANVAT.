@@ -61,6 +61,10 @@ body {
     display: none;
 }
 
+.menu .menu21 {
+    display: none;
+}
+
 .menu .menu3 {
     display: flex;
 }
@@ -195,14 +199,14 @@ body {
     box-shadow: 0 4px 15px rgba(44, 185, 217, 0.2);
 }
 
-.header{
+.header {
     background-color: #222222;
     height: 200px;
     margin-top: 74px;
 }
 
 
-.header-chu{
+.header-chu {
     color: white;
     font-size: 40px;
     font-weight: bold;
@@ -210,7 +214,7 @@ body {
     padding: 70px 0 5px 0;
 }
 
-.header-chu2{
+.header-chu2 {
     font-size: 20px;
     text-align: center;
 }
@@ -235,7 +239,8 @@ body {
     width: 100%;
     padding: 14px 20px;
     border: 1.5px solid #ccc;
-    border-radius: 30px 0 0 30px;   /* Bo tròn bên trái */
+    border-radius: 30px 0 0 30px;
+    /* Bo tròn bên trái */
     font-size: 16px;
     outline: none;
 }
@@ -245,7 +250,8 @@ body {
     height: 50px;
     background: #000;
     border: none;
-    border-radius: 0 30px 30px 0;  /* Bo tròn bên phải */
+    border-radius: 0 30px 30px 0;
+    /* Bo tròn bên phải */
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -314,6 +320,10 @@ body {
         text-align: left;
     }
 
+    .menu .menu21 {
+        display: none;
+    }
+
     .menu .menu3 {
         display: flex;
         padding: 14px 20px;
@@ -333,7 +343,7 @@ body {
         display: none;
     }
 
-    .header{
+    .header {
         margin-top: 64px;
     }
 
@@ -453,6 +463,13 @@ body {
         text-align: left;
     }
 
+    .menu .menu21 {
+        display: flex;
+        padding: 14px 20px;
+        border-right: none;
+        text-align: left;
+    }
+
     .menu .menu3 {
         display: flex;
         padding: 14px 20px;
@@ -475,7 +492,7 @@ body {
         display: none;
     }
 
-    .header{
+    .header {
         margin-top: 64px;
     }
 

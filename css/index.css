@@ -729,11 +729,7 @@ body {
 
     .menu .menu21 {
         display: none;
-        padding: 14px 20px;
-        border-right: none;
-        text-align: left;
     }
-
 
     .menu .menu3 {
         display: flex;
@@ -913,6 +909,13 @@ body {
     }
 
     .menu .menu2 {
+        display: flex;
+        padding: 14px 20px;
+        border-right: none;
+        text-align: left;
+    }
+
+    .menu .menu21 {
         display: flex;
         padding: 14px 20px;
         border-right: none;

@@ -61,6 +61,10 @@ body {
     display: none;
 }
 
+.menu .menu21 {
+    display: none;
+}
+
 .menu .menu3 {
     display: flex;
 }
@@ -490,6 +494,10 @@ body {
         text-align: left;
     }
 
+    .menu .menu21 {
+        display: none;
+    }
+
     .menu .menu3 {
         display: flex;
         padding: 14px 20px;
@@ -546,7 +554,7 @@ body {
         padding: 20px;
     }
 
-        .bestsell .title2 {
+    .bestsell .title2 {
         font-size: 30px;
     }
 
@@ -607,6 +615,10 @@ body {
         padding: 15px 20px;
     }
 
+    .header{
+        margin-top: 64px;
+    }
+
     .menu {
         position: fixed;
         top: 64px;
@@ -649,6 +661,13 @@ body {
         text-align: left;
     }
 
+    .menu .menu21 {
+        display: flex;
+        padding: 14px 20px;
+        border-right: none;
+        text-align: left;
+    }
+
     .menu .menu3 {
         display: flex;
         padding: 14px 20px;
@@ -678,7 +697,7 @@ body {
         padding: 15px;
     }
 
-        .bestsell .title2 {
+    .bestsell .title2 {
         font-size: 30px;
     }
 

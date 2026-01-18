@@ -61,6 +61,10 @@ body {
     display: none;
 }
 
+.menu .menu21 {
+    display: none;
+}
+
 .menu .menu3 {
     display: flex;
 }
@@ -195,14 +199,14 @@ body {
     box-shadow: 0 4px 15px rgba(44, 185, 217, 0.2);
 }
 
-.header{
+.header {
     background-color: #222222;
     height: 200px;
     margin-top: 74px;
 }
 
 
-.header-chu{
+.header-chu {
     color: white;
     font-size: 40px;
     font-weight: bold;
@@ -210,7 +214,7 @@ body {
     padding: 70px 0 5px 0;
 }
 
-.header-chu2{
+.header-chu2 {
     font-size: 20px;
     text-align: center;
 }
@@ -231,7 +235,7 @@ body {
 
 /* card hồ sơ */
 .profile-card {
-    width: 360px;
+    max-width: 360px;
     border: 2px solid #000;
     padding: 24px 20px;
     background: #fff;
@@ -264,7 +268,8 @@ body {
 .info p,
 .address p {
     display: grid;
-    grid-template-columns: 22px 1fr; /* icon | text */
+    grid-template-columns: 22px 1fr;
+    /* icon | text */
     column-gap: 10px;
 
     align-items: center;
@@ -351,6 +356,10 @@ body {
         text-align: left;
     }
 
+    .menu .menu21 {
+        display: none;
+    }
+
     .menu .menu3 {
         display: flex;
         padding: 14px 20px;
@@ -370,7 +379,7 @@ body {
         display: none;
     }
 
-    .header{
+    .header {
         margin-top: 64px;
     }
 
@@ -490,6 +499,13 @@ body {
         text-align: left;
     }
 
+    .menu .menu21 {
+        display: flex;
+        padding: 14px 20px;
+        border-right: none;
+        text-align: left;
+    }
+
     .menu .menu3 {
         display: flex;
         padding: 14px 20px;
@@ -512,7 +528,7 @@ body {
         display: none;
     }
 
-    .header{
+    .header {
         margin-top: 64px;
     }
 
